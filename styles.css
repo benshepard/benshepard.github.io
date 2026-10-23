@@ -9,3 +9,13 @@
 .hero-visual::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(15,24,28,.46),transparent 27%)}
 .hero-visual .photo-credit{z-index:1;right:clamp(20px,4vw,65px);bottom:20px;font-size:10px;letter-spacing:.17em;text-shadow:0 1px 6px rgba(0,0,0,.35)}
 @media(max-width:720px){.hero{padding:60px 0 45px}.hero-visual{aspect-ratio:4/3}.hero-visual img{object-position:45% center}.hero-visual .photo-credit{right:18px;bottom:13px;font-size:9px}}
+
+/* Home welcome: compact editorial introduction between hero and offerings */
+.home-introduction{background:#f0f2ef;border-bottom:1px solid var(--line)}
+.home-introduction .split{grid-template-columns:minmax(0,1.4fr) minmax(250px,.8fr);gap:clamp(38px,7vw,105px);align-items:center}
+.home-introduction .intro{max-width:640px}
+.home-introduction .btn{margin-top:16px}
+.intro-aside{border-left:2px solid var(--accent);padding:8px 0 8px 28px}
+.intro-aside-lead{font-family:Manrope,sans-serif;font-size:clamp(23px,2.7vw,34px);font-weight:600;line-height:1.25;letter-spacing:-.045em;margin:15px 0}
+.intro-aside p:not(.intro-aside-lead){font-size:15px;color:var(--muted);margin-bottom:0}
+@media(max-width:720px){.home-introduction .split{grid-template-columns:1fr;gap:38px}.intro-aside{padding-left:20px}}
