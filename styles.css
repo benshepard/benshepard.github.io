@@ -121,3 +121,45 @@
 .cover-scroll{right:24px;bottom:22px;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.65)}
 .cinematic-image{margin-top:40px;height:clamp(260px,53vw,410px)}
 }
+
+/* Homepage: photographic editorial mockup, 26 October 2026 */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+body{background:#f7f5f0;color:#202630}
+.site-header{background:rgba(248,247,243,.97)}
+.brand{letter-spacing:.24em;font-weight:500}
+.cover-hero{min-height:0;height:clamp(430px,47vw,650px)}
+.cover-photo img{object-position:center 47%}
+.cover-hero::before{background:linear-gradient(90deg,rgba(5,12,20,.04) 0%,rgba(250,226,194,.03) 44%,rgba(255,235,202,.18) 100%)}
+.cover-content{height:100%;padding:34px clamp(34px,7vw,100px);align-items:center}
+.cover-content-inner{width:45%;max-width:600px}
+.cover-content h1{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(48px,5.8vw,91px);font-weight:400;line-height:1.15;letter-spacing:-.065em;margin:0 0 15px;white-space:nowrap;color:#0e1b26}
+.cover-hairline{width:30px;height:2px;background:#63848a;margin:17px 0}
+.cover-credentials{font-family:'DM Sans',sans-serif;font-size:clamp(12px,1.15vw,16px);font-weight:500;letter-spacing:.08em;line-height:1.7;max-width:580px;color:#16212a}
+.cinematic-image{margin:0;height:clamp(210px,24vw,340px);border-top:5px solid #f8f6f0;border-bottom:5px solid #f8f6f0}
+.cinematic-image img{object-position:center 49%}
+.home-introduction{background:#f7f5f0;padding:clamp(32px,4vw,55px) 0 30px}
+.home-introduction .welcome-layout{grid-template-columns:minmax(0,.96fr) minmax(0,1fr);gap:clamp(28px,4vw,58px);align-items:center}
+.home-introduction .welcome-portrait{max-width:none;aspect-ratio:1.22;align-self:stretch;border-radius:3px}
+.home-introduction .welcome-portrait img{object-position:center 32%}
+.section-kicker{display:flex;align-items:center;gap:14px;font-family:'DM Sans',sans-serif;color:#607992;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.home-introduction .section-kicker:after{content:'';height:1px;flex:1;background:#aebdc6}
+.home-introduction .welcome-copy .section-title{font-family:'Libre Baskerville',Georgia,serif;font-weight:400;font-size:clamp(35px,4vw,55px);letter-spacing:-.06em;margin:13px 0}
+.home-introduction .welcome-copy .intro{font-family:Georgia,serif;font-size:clamp(13px,1.1vw,16px);line-height:1.54;color:#35404e;margin:12px 0}
+.home-introduction .welcome-philosophy{background:#e9edf0;border:0;border-radius:2px;padding:16px 18px;margin:20px 0 10px;font-family:Georgia,serif;font-style:italic;font-size:clamp(17px,1.6vw,21px);color:#4d637d}
+.home-introduction .welcome-philosophy small{display:block;margin-top:9px;font-style:normal;font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:.14em;color:#677f91}
+.welcome-about-link{color:#52737a;font-size:12px;font-weight:600}
+.home-services{background:#f7f5f0;padding:5px 0 64px}
+.service-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:20px}
+.service-heading .section-kicker{flex:1}
+.service-heading .section-kicker:after{content:'';height:1px;background:#aebdc6;flex:1}
+.service-heading>span{font-size:10px;letter-spacing:.12em;color:#7890a1}
+.home-services .grid{gap:18px;margin:0}
+.home-services .photo-service-card{padding:0;min-height:0;display:block;overflow:hidden;border:1px solid #dfe4e3;border-radius:4px;background:#f9f8f5}
+.photo-service-card>img{display:block;width:100%;height:clamp(145px,14vw,200px);object-fit:cover}
+.photo-service-body{padding:16px 18px 21px}
+.photo-service-body h3{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(16px,1.5vw,22px);font-weight:400;letter-spacing:-.04em;margin:0 0 9px;display:flex;justify-content:space-between;gap:8px}
+.photo-service-body h3 span{color:#667e8c;font-family:'DM Sans',sans-serif}
+.photo-service-body p{font-family:Georgia,serif;line-height:1.46;font-size:14px;color:#596472;margin:0}
+.photo-service-card:hover{border-color:#9cacae;transform:translateY(-2px);transition:transform .2s ease}
+@media(max-width:900px){.cover-hero{height:500px}.cover-content-inner{width:49%}.cover-content h1{font-size:clamp(44px,5.6vw,66px)}.home-introduction .welcome-layout{gap:25px}}
+@media(max-width:720px){.cover-hero{height:550px}.cover-photo img{object-position:41% center}.cover-hero::before{background:linear-gradient(0deg,rgba(10,20,28,.7),transparent 65%)}.cover-content{align-items:flex-end;padding:35px 24px}.cover-content-inner{width:100%}.cover-content h1{font-size:clamp(45px,9vw,62px);white-space:normal;color:#fff}.cover-credentials{color:#fff;font-size:12px}.cover-hairline{background:#fff}.cinematic-image{height:205px}.home-introduction{padding:45px 0 28px}.home-introduction .welcome-layout{grid-template-columns:1fr;gap:24px}.home-introduction .welcome-portrait{max-width:none;aspect-ratio:1.2}.home-services{padding:12px 0 60px}.service-heading>span{display:none}.home-services .grid{grid-template-columns:1fr}.photo-service-card>img{height:210px}}
