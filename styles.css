@@ -29,3 +29,55 @@
 .welcome-philosophy .intro-aside-lead{font-size:clamp(22px,2.1vw,29px);margin:10px 0}
 .welcome-philosophy p:last-child{font-size:14px;color:var(--muted);margin:0}
 @media(max-width:720px){.home-introduction .welcome-layout{grid-template-columns:1fr;gap:30px}.welcome-portrait{max-width:400px;width:100%}}
+
+/* 2026 spacious photographic homepage cover */
+.cover-hero{display:grid;grid-template-columns:52% 48%;min-height:min(760px,calc(100svh - 76px));background:#f4f3ee}
+.cover-photo{position:relative;min-height:630px;background:#b1b7b1;overflow:hidden}
+.cover-photo img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;object-position:50% 45%}
+.cover-content{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(40px,6vw,100px);position:relative}
+.cover-content-inner{width:100%;max-width:570px}
+.cover-content h1{font-family:Manrope,sans-serif;font-size:clamp(58px,6.7vw,112px);font-weight:600;line-height:1.02;letter-spacing:-.075em;margin:25px 0 26px}
+.cover-credentials{font-size:clamp(14px,1.35vw,17px);line-height:2;color:#526164;max-width:430px}
+.cover-credentials span{padding:0 5px;color:#94a09b}
+.cover-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:38px}
+.cover-scroll{position:absolute;bottom:30px;left:clamp(40px,6vw,100px);font-size:10px;font-weight:700;letter-spacing:.18em;color:var(--accent)}
+.cover-scroll span{margin-left:15px;font-size:18px;vertical-align:middle}
+.cinematic-image{height:clamp(320px,44vw,650px);position:relative;overflow:hidden;background:#536a71}
+.cinematic-image img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 49%}
+.cinematic-image::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,20,26,.36),transparent 30%);pointer-events:none}
+.cinematic-image .photo-credit{position:absolute;right:clamp(20px,5vw,75px);bottom:24px;z-index:1;color:#fff;letter-spacing:.15em;font-size:10px}
+.home-introduction{padding-top:clamp(95px,10vw,150px);padding-bottom:clamp(95px,10vw,150px)}
+.home-introduction .welcome-layout{gap:clamp(60px,8vw,120px)}
+.home-introduction .welcome-portrait{max-width:490px}
+.home-introduction .welcome-copy .section-title{font-size:clamp(43px,4.6vw,66px)}
+.home-introduction .welcome-copy .intro{font-size:clamp(15px,1.25vw,17px);line-height:1.85}
+.home-introduction .welcome-philosophy{margin:36px 0 34px}
+.home-introduction+.section{padding-top:clamp(95px,10vw,145px);padding-bottom:clamp(95px,10vw,145px)}
+.home-introduction+.section .grid{gap:22px;margin-top:48px}
+.home-introduction+.section .service-card{padding:36px;min-height:265px}
+@media(max-width:900px){
+.cover-hero{min-height:610px;grid-template-columns:50% 50%}
+.cover-photo{min-height:610px}
+.cover-content{padding:34px}
+.cover-content h1{font-size:clamp(51px,7vw,78px)}
+.cover-scroll{left:34px}
+}
+@media(max-width:720px){
+.cover-hero{display:flex;flex-direction:column;min-height:0}
+.cover-photo{min-height:0;height:min(65vh,560px);height:min(65svh,560px)}
+.cover-photo img{object-position:center 42%}
+.cover-content{padding:42px 22px 64px;min-height:350px}
+.cover-content h1{font-size:clamp(51px,13vw,72px);margin:18px 0 20px}
+.cover-credentials{line-height:1.85;font-size:14px}
+.cover-scroll{left:22px;bottom:20px}
+.cover-actions{margin-top:24px}
+.cinematic-image{height:290px}
+.cinematic-image img{object-position:40% center}
+.cinematic-image .photo-credit{font-size:9px;right:18px;bottom:15px}
+.home-introduction{padding-top:75px;padding-bottom:80px}
+.home-introduction .welcome-layout{gap:32px}
+.home-introduction .welcome-portrait{max-width:420px}
+.home-introduction+.section{padding-top:75px;padding-bottom:75px}
+.home-introduction+.section .grid{gap:16px;margin-top:30px}
+.home-introduction+.section .service-card{padding:26px;min-height:0}
+}
