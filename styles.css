@@ -37,3 +37,13 @@
 .instruction-services-grid .service-card a{margin-top:auto;padding-top:16px}
 .service-availability{margin-top:18px}
 @media(max-width:720px){.instruction-services-grid{grid-template-columns:1fr}.instruction-services-grid .service-card{min-height:0}}
+
+/* Editorial image-led instructional cards */
+.instruction-services-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
+.instruction-services-grid .service-card{padding:0;display:flex;flex-direction:column;min-height:0;background:var(--paper);overflow:hidden}
+.instruction-services-grid .training-service-photo{display:block;width:100%;height:auto;aspect-ratio:20/13;object-fit:cover;object-position:center;flex-shrink:0;background:#e2e6e3}
+.instruction-services-grid .training-service-body{display:flex;flex:1;flex-direction:column;padding:25px 28px 29px}
+.instruction-services-grid .training-service-body h3{margin:9px 0 13px}
+.instruction-services-grid .training-service-body p{margin:0 0 13px}
+.instruction-services-grid .training-service-body a{margin-top:auto;padding-top:10px}
+@media(max-width:720px){.instruction-services-grid{grid-template-columns:1fr;gap:20px}.instruction-services-grid .training-service-body{padding:22px}}
