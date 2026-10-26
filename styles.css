@@ -29,3 +29,11 @@
 .welcome-philosophy .intro-aside-lead{font-size:clamp(22px,2.1vw,29px);margin:10px 0}
 .welcome-philosophy p:last-child{font-size:14px;color:var(--muted);margin:0}
 @media(max-width:720px){.home-introduction .welcome-layout{grid-template-columns:1fr;gap:30px}.welcome-portrait{max-width:400px;width:100%}}
+
+/* Balanced four-service homepage grid */
+.instruction-services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.instruction-services-grid .service-card{min-height:250px;display:flex;flex-direction:column}
+.instruction-services-grid .service-card h3{margin-top:18px}
+.instruction-services-grid .service-card a{margin-top:auto;padding-top:16px}
+.service-availability{margin-top:18px}
+@media(max-width:720px){.instruction-services-grid{grid-template-columns:1fr}.instruction-services-grid .service-card{min-height:0}}
