@@ -81,3 +81,43 @@
 .home-introduction+.section .grid{gap:16px;margin-top:30px}
 .home-introduction+.section .service-card{padding:26px;min-height:0}
 }
+
+/* Editorial photographic cover: full-bleed sunset backdrop, with a distinct second photo section */
+.cover-hero{display:block;position:relative;isolation:isolate;min-height:clamp(610px,76svh,850px);background:#b49b85;overflow:hidden}
+.cover-photo{position:absolute;inset:0;min-height:0;z-index:-2}
+.cover-photo img{object-position:center 50%}
+.cover-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(15,25,29,.04) 0%,rgba(250,237,215,.06) 42%,rgba(252,241,221,.31) 72%,rgba(251,239,217,.38) 100%);pointer-events:none}
+.cover-content{min-height:inherit;width:100%;padding:clamp(55px,7vw,115px) clamp(36px,8vw,145px);display:flex;justify-content:center;align-items:flex-end}
+.cover-content-inner{width:min(48%,570px);margin-left:auto}
+.cover-content .eyebrow{color:#29373c;text-shadow:0 1px 9px rgba(255,244,225,.55)}
+.cover-content h1{font-size:clamp(64px,7.5vw,116px);color:#162329;text-shadow:0 2px 16px rgba(255,242,215,.44)}
+.cover-credentials{color:#213138;font-weight:600;max-width:510px;text-shadow:0 1px 10px rgba(255,241,215,.64)}
+.cover-credentials span{color:#566e74}
+.cover-actions .btn.outline{background:rgba(248,248,245,.86)}
+.cover-actions .btn.outline:hover{background:#fff}
+.cover-scroll{left:auto;right:clamp(36px,8vw,145px);bottom:28px;color:#26373b;text-shadow:0 1px 8px rgba(255,241,215,.8)}
+.cinematic-image{margin-top:clamp(48px,5vw,84px);margin-bottom:0;height:clamp(330px,38vw,570px)}
+@media(max-width:900px){
+.cover-hero{min-height:640px}
+.cover-content{padding:52px 45px}
+.cover-content-inner{width:52%}
+.cover-content h1{font-size:clamp(56px,8vw,82px)}
+.cover-scroll{right:45px}
+}
+@media(max-width:720px){
+.cover-hero{min-height:0;height:min(760px,88svh);display:block}
+.cover-photo{height:100%;position:absolute;min-height:0}
+.cover-photo img{object-position:38% center}
+.cover-hero::before{background:linear-gradient(to bottom,rgba(8,20,24,.06) 0%,rgba(17,28,32,.08) 28%,rgba(12,22,27,.72) 100%)}
+.cover-content{height:100%;min-height:0;padding:40px 24px 76px;align-items:flex-end;justify-content:flex-end}
+.cover-content-inner{width:100%;margin:0}
+.cover-content .eyebrow,.cover-content h1,.cover-credentials{color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.42)}
+.cover-content h1{font-size:clamp(57px,13vw,80px);margin:15px 0 17px}
+.cover-credentials{max-width:100%;font-size:13px;line-height:1.8}
+.cover-credentials span{color:#d8dbdb}
+.cover-actions{margin-top:19px}
+.cover-actions .btn.outline{background:rgba(248,248,245,.95);color:#1e2a2c}
+.cover-actions .btn{background:#f8f8f5;color:#1e2a2c;border-color:#f8f8f5}
+.cover-scroll{right:24px;bottom:22px;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.65)}
+.cinematic-image{margin-top:40px;height:clamp(260px,53vw,410px)}
+}
