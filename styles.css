@@ -163,3 +163,25 @@ body{background:#f7f5f0;color:#202630}
 .photo-service-card:hover{border-color:#9cacae;transform:translateY(-2px);transition:transform .2s ease}
 @media(max-width:900px){.cover-hero{height:500px}.cover-content-inner{width:49%}.cover-content h1{font-size:clamp(44px,5.6vw,66px)}.home-introduction .welcome-layout{gap:25px}}
 @media(max-width:720px){.cover-hero{height:550px}.cover-photo img{object-position:41% center}.cover-hero::before{background:linear-gradient(0deg,rgba(10,20,28,.7),transparent 65%)}.cover-content{align-items:flex-end;padding:35px 24px}.cover-content-inner{width:100%}.cover-content h1{font-size:clamp(45px,9vw,62px);white-space:normal;color:#fff}.cover-credentials{color:#fff;font-size:12px}.cover-hairline{background:#fff}.cinematic-image{height:205px}.home-introduction{padding:45px 0 28px}.home-introduction .welcome-layout{grid-template-columns:1fr;gap:24px}.home-introduction .welcome-portrait{max-width:none;aspect-ratio:1.2}.home-services{padding:12px 0 60px}.service-heading>span{display:none}.home-services .grid{grid-template-columns:1fr}.photo-service-card>img{height:210px}}
+
+/* Cover framing and panorama refinements */
+.cover-photo{background:#a69b88 url("ben-cover-sunset.jpg") center center / cover no-repeat}
+.cover-photo img{object-fit:cover;object-position:center 51%;transform:scale(.95);transform-origin:center}
+.cover-content{padding-left:clamp(28px,5vw,85px);padding-right:clamp(35px,6vw,100px)}
+.cover-content-inner{width:min(47%,610px);max-width:none;margin-left:auto;margin-right:clamp(18px,4vw,70px);transform:translateY(5%)}
+.cover-content h1{font-size:clamp(48px,5.5vw,88px)}
+.cover-credentials{max-width:530px}
+.cinematic-image{margin:clamp(80px,8vw,125px) auto 0;width:100%;height:auto;aspect-ratio:3/2;max-height:none;border:0;overflow:hidden;background:#52636b}
+.cinematic-image img{height:100%;width:100%;object-fit:contain;object-position:center center}
+@media(max-width:900px) and (min-width:721px){
+.cover-content-inner{width:51%;margin-right:12px;transform:none}
+.cover-content h1{font-size:clamp(45px,5.7vw,65px)}
+}
+@media(max-width:720px){
+.cover-photo img{transform:none;object-position:40% center}
+.cover-content{padding:35px 24px}
+.cover-content-inner{width:100%;margin:0;transform:none}
+.cover-content h1{font-size:clamp(45px,9vw,62px)}
+.cinematic-image{margin-top:56px;width:100%;height:auto;aspect-ratio:3/2}
+.cinematic-image img{object-fit:contain}
+}
