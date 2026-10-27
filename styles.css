@@ -65,7 +65,7 @@
 .about-me-split .about-flight-photo{margin:0}
 @media(max-width:720px){.about-me-split .about-flight-photo{margin-top:12px}}
 
-.about-me-split .about-photo-and-background{padding-top:37.8px}
+.about-me-split .about-photo-and-background{padding-top:18.9px}
 .about-me-split .about-flight-photo + .about-flight-photo{margin-top:24px}
-.about-me-split .about-flight-photo-second{aspect-ratio:1049/1536}
+.about-me-split .about-flight-photo-second{aspect-ratio:1359/1536}
 @media(max-width:720px){.about-me-split .about-photo-and-background{padding-top:0}}
