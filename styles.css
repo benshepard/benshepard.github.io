@@ -69,3 +69,36 @@
 .about-me-split .about-flight-photo + .about-flight-photo{margin-top:24px}
 .about-me-split .about-flight-photo-second{aspect-ratio:1359/1536}
 @media(max-width:720px){.about-me-split .about-photo-and-background{padding-top:0}}
+
+
+/* Course syllabus navigation and lesson plans */
+.content-card{display:flex;flex-direction:column}
+.content-card h3{margin-top:0}
+.content-card p:last-of-type{margin-bottom:22px}
+.content-card .lesson-card-link{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;align-self:flex-start;margin-top:auto;border:1px solid #9ba7a7;padding:10px 15px;font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--ink);transition:background-color .15s,border-color .15s}
+.content-card .lesson-card-link:hover{background:var(--sand);border-color:var(--accent)}
+.lesson-index-section{padding-top:54px;padding-bottom:50px;scroll-margin-top:88px}
+.lesson-index{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:28px 0 20px}
+.lesson-index a{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--paper);border:1px solid var(--line);padding:16px 19px;font-size:14px;font-weight:700;line-height:1.4}
+.lesson-index a:hover{border-color:var(--accent);background:#f5f7f4}
+.lesson-index a span{color:var(--accent)}
+.lesson-main{padding-top:5px;padding-bottom:85px}
+.lesson-section{padding:65px 0 70px;border-bottom:1px solid var(--line);scroll-margin-top:91px}
+.lesson-section:last-child{border-bottom:none}
+.lesson-section-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:26px}
+.lesson-section-heading h2{font-family:Manrope,sans-serif;font-weight:600;font-size:clamp(29px,3.5vw,43px);letter-spacing:-.05em;line-height:1.2;margin:10px 0 16px}
+.lesson-section-heading p{color:var(--muted);font-size:16px;max-width:740px;margin:0}
+.lesson-type{color:var(--accent);font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase}
+.lesson-back,.lesson-top{color:var(--accent);font-size:12px;font-weight:700}
+.lesson-back{white-space:nowrap;padding-top:8px}
+.lesson-back:hover,.lesson-top:hover{text-decoration:underline}
+.lesson-steps{padding:0;margin:34px 0 22px;list-style:none;border-top:1px solid var(--line)}
+.lesson-steps li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.lesson-number{font-family:Manrope,sans-serif;font-size:12px;font-weight:700;letter-spacing:.09em;color:var(--accent);padding-top:3px}
+.lesson-steps h3{font-family:Manrope,sans-serif;font-size:18px;letter-spacing:-.025em;line-height:1.4;margin:0 0 5px}
+.lesson-steps p{font-size:14px;color:var(--muted);margin:0;max-width:850px}
+.lesson-note{background:#edf1ee;padding:16px 20px;font-size:13px;color:#435456;margin:25px 0}
+.lesson-top{display:inline-block;margin-top:4px}
+@media(max-width:850px){.menu-toggle{display:block}.nav{display:none;position:absolute;left:0;right:0;top:76px;background:var(--bg);padding:20px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a{padding:12px 0;font-size:14px}}
+@media(max-width:720px){.lesson-index{grid-template-columns:repeat(2,minmax(0,1fr))}.lesson-section{padding:50px 0}.lesson-section-heading{display:block}.lesson-back{display:inline-block;margin-top:12px}}
+@media(max-width:480px){.lesson-index{grid-template-columns:1fr}.lesson-steps li{grid-template-columns:30px minmax(0,1fr);gap:14px}.lesson-index-section{padding-top:45px}}
