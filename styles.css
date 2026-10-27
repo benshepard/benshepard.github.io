@@ -47,3 +47,8 @@
 .instruction-services-grid .training-service-body p{margin:0 0 13px}
 .instruction-services-grid .training-service-body a{margin-top:auto;padding-top:10px}
 @media(max-width:720px){.instruction-services-grid{grid-template-columns:1fr;gap:20px}.instruction-services-grid .training-service-body{padding:22px}}
+
+/* Single-column, understated philosophy section */
+.philosophy-editorial{max-width:790px}
+.philosophy-editorial .intro{max-width:760px;margin:0 0 18px}
+.philosophy-editorial .btn{margin-top:17px}
