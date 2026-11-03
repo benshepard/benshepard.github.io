@@ -102,3 +102,89 @@
 @media(max-width:850px){.menu-toggle{display:block}.nav{display:none;position:absolute;left:0;right:0;top:76px;background:var(--bg);padding:20px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.nav.open{display:flex}.nav a{padding:12px 0;font-size:14px}}
 @media(max-width:720px){.lesson-index{grid-template-columns:repeat(2,minmax(0,1fr))}.lesson-section{padding:50px 0}.lesson-section-heading{display:block}.lesson-back{display:inline-block;margin-top:12px}}
 @media(max-width:480px){.lesson-index{grid-template-columns:1fr}.lesson-steps li{grid-template-columns:30px minmax(0,1fr);gap:14px}.lesson-index-section{padding-top:45px}}
+
+
+/* =========================================================
+   CHARCOAL EDITORIAL — site-wide dark theme, November 2026
+   Retains existing typography, photography and page structure.
+   ========================================================= */
+:root {
+  --bg:#141a1d;
+  --paper:#1b2327;
+  --paper-alt:#20292e;
+  --ink:#f2f1ec;
+  --muted:#aab3b6;
+  --accent:#9db8c1;
+  --line:#39484d;
+  --sand:#20292e;
+  color-scheme:dark;
+}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink)}
+.site-header{background:rgba(20,26,29,.94);border-color:var(--line)}
+.brand,.brand:visited{color:var(--ink)}
+.brand span{color:var(--accent)}
+.nav a{color:#c3cccf}
+.nav a.active,.nav a:hover{color:#f2f1ec}
+.nav a.contact-pill{border-color:#778b92;color:var(--ink);background:transparent}
+.nav a.contact-pill:hover{background:#253239}
+.menu-toggle{border-color:#63757b;color:var(--ink);background:#20292e}
+@media(max-width:850px){.nav{background:var(--bg);border-color:var(--line)}}
+.eyebrow,.section-kicker,.lesson-type{color:var(--accent)}
+.section,.page-heading,.lesson-main,.lesson-section,.lesson-index-section{background:var(--bg)}
+.section.alt,.home-introduction{background:var(--paper-alt)}
+.hero,.cover-content{background:transparent}
+.hero h1,.page-heading h1,.section-title,.service-card h3,.content-card h3,
+.resource h3,.lesson-section-heading h2,.lesson-steps h3,.quote{color:var(--ink)}
+.lede,.intro,.prose p,.prose li,.service-card p,.content-card p,.resource p,
+.faq-item p,.small,.lesson-section-heading p,.lesson-steps p{color:var(--muted)}
+.service-card,.content-card,.resource,.contact-form,.lesson-index a{
+  background:var(--paper);color:var(--ink);border-color:var(--line);
+}
+.service-card a,.resource a,.lesson-back,.lesson-top{color:#b3d0d8}
+.service-card a:hover,.resource a:hover{color:#e3f3f4}
+.instruction-services-grid .training-service-body{background:var(--paper)}
+.instruction-services-grid .training-service-photo{background:#28353a}
+.welcome-philosophy,.intro-aside{border-color:var(--accent)}
+.welcome-philosophy p:last-child,.intro-aside p:not(.intro-aside-lead){color:var(--muted)}
+.welcome-portrait{background:#28353a}
+.quote{border-color:var(--accent)}
+.stat{background:#26363b;color:#c3dce1}
+.notice,.lesson-note{background:#243239;color:#d1dcde;border-color:var(--accent)}
+.lesson-note strong,.notice strong{color:var(--ink)}
+.cta{background:#26363b}
+.btn{background:#e5ebe9;color:#141a1d;border-color:#e5ebe9}
+.btn:hover{background:#9db8c1;border-color:#9db8c1;color:#101719}
+.btn.outline,.content-card .lesson-card-link{
+  background:transparent;color:var(--ink);border-color:#819399;
+}
+.btn.outline:hover,.content-card .lesson-card-link:hover{background:#29383d;border-color:#a5bec6;color:#fff}
+.footer{background:#101619;border-top:1px solid var(--line);color:var(--ink)}
+.footer strong{color:var(--ink)}
+.footer p,.footer a,.foot-base{color:#b6c3c5}
+.footer a:hover{color:#fff}
+.foot-base{border-color:#354248}
+.rate-table th,.rate-table td{border-color:var(--line)}
+.rate-table th,.rate-table td{color:var(--ink)}
+.faq-item{border-color:var(--line);background:transparent;color:var(--ink)}
+.faq-item summary{color:var(--ink)}
+.resource-tools input,.resource-tools select,.field input,.field select,.field textarea,
+.contact-form input,.contact-form select,.contact-form textarea{
+  background:#151e22;color:var(--ink);border:1px solid #62747a;
+}
+.resource-tools input::placeholder,.field input::placeholder,.field textarea::placeholder,
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#a7b5b8}
+select option{background:#1b2327;color:#f2f1ec}
+input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible,button:focus-visible{
+  outline:2px solid #b1d6df;outline-offset:3px;
+}
+.resource{background:var(--paper)}
+.resource small,.resource a{color:#b3d0d8}
+.lesson-index a:hover{border-color:var(--accent);background:#27353a}
+.lesson-steps{border-color:var(--line)}
+.lesson-steps li{border-color:var(--line)}
+.content-card .lesson-card-link:hover{background:#29383d}
+.photo-credit{text-shadow:0 1px 8px rgba(0,0,0,.65)}
+/* Keep photographs natural against the dark surroundings. */
+.hero-visual,.cinematic-image{background:#26343a}
+@media(prefers-reduced-motion:reduce){.photo-service-card:hover{transform:none}}
