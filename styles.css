@@ -78,24 +78,3 @@
 .private-pilot-resource p{margin:0 0 15px}
 .instruction-resource-link{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid #9ba7a7;padding:10px 15px;font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--ink);transition:background-color .15s,border-color .15s}
 .instruction-resource-link:hover{background:var(--sand);border-color:var(--accent)}
-
-
-/* Oxford Blue accents: emphasis on page sections and footers, not buttons or type. */
-:root{
-  --oxford:#23467c;
-  --oxford-light:#eaf0f8;
-  --oxford-line:#d4deeb;
-}
-/* Preserve the predominantly white editorial design; cool the alternating sections. */
-.section.alt{background:#eef3f9}
-.cta{background:#e4edf8}
-.cta .section-title{color:#24303a}
-/* The dark Oxford Blue footer is the principal new color statement site-wide. */
-.footer{background:var(--oxford);color:#fff}
-.footer strong{color:#fff}
-.footer p,.footer a{color:#e1eaf5}
-.footer a:hover{color:#fff}
-.foot-base{border-top-color:#56749b;color:#d4e1f1}
-/* A very subtle blue tint in supporting information blocks. */
-.notice,.lesson-note{background:#eef3fa;border-left-color:#5476a3;color:#3f526c}
-/* Intentionally leave .btn, .btn.outline, and primary text styling unchanged. */
