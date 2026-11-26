@@ -78,3 +78,9 @@
 .private-pilot-resource p{margin:0 0 15px}
 .instruction-resource-link{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid #9ba7a7;padding:10px 15px;font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--ink);transition:background-color .15s,border-color .15s}
 .instruction-resource-link:hover{background:var(--sand);border-color:var(--accent)}
+
+/* Flight instruction mountain photograph header */
+.instruction-header-photo{position:relative;width:100%;aspect-ratio:2.45/1;max-height:520px;min-height:280px;overflow:hidden;background:#d4e4ee url("cockpit-golden-gate.jpg") center/cover no-repeat}
+.instruction-header-photo img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 55%}
+.instruction-intro{padding-top:62px;padding-bottom:32px}
+@media(max-width:720px){.instruction-header-photo{aspect-ratio:4/3;min-height:0;max-height:none}.instruction-header-photo img{object-position:center 57%}.instruction-intro{padding-top:45px;padding-bottom:18px}}
